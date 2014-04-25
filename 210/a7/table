@@ -1,0 +1,83 @@
+Identifier	Address		Start Val	End Val
+-------------------------------------------------------
+main:		0x10c9c		-		-
+
+avg		0xffbff63c	0		156470
+data[0]		0xffbff640	0		-12345
+data[1]		0xffbff644	-12629744	-2345
+data[2]		0xffbff648	0		-999
+data[3]		0xffbff64c	0		-567
+data[4]		0xffbff650	0		-99
+data[5]		0xffbff654	0		-3
+data[6]		0xffbff658	0		1
+data[7]		0xffbff65c	0		2
+data[8]		0xffbff660	-4196664	3
+data[9]		0xffbff664	0		12
+data[10]	0xffbff668	0		14
+data[11]	0xffbff66c	0		21
+data[12]	0xffbff670	0		32
+data[13]	0xffbff674	0		42
+data[14]	0xffbff678	0		56
+data[15]	0xffbff67c	0		76
+data[16]	0xffbff680	0		99
+data[17]	0xffbff684	0		123
+data[18]	0xffbff688	3		199
+data[19]	0xffbff68c	-4196596	234
+data[20]	0xffbff690	4		999
+data[21]	0xffbff694	-4196588	3456789	
+max		0xffbff638	0		345678
+maxloc		0xffbff634	0		13
+min		0xffbff62c	0		-123545
+minloc		0xffbff628	0		21
+size		0xffbff624	2816		22
+
+maxpos:		0x107dc		-		-
+
+high		0xffbff60c	21		21
+i		0xffbff5ac	4		22
+low		0xffbff608	0		0
+maxpos		0xffbff5a8	88		13
+value		0xffbff5a4	69344		3456789
+
+minpos:		0x10880		-		-
+
+high		0xffbff60c	21		21
+i		0xffbff5ac	22		22
+low		0xffbff608	0		0
+minposition	0xffbff5a8	13		21
+value		0xffbff5a4	3456789		-12345
+
+average:	0x10930		-		-
+
+average		0xffbff5a4	-12345		156470
+i		0xffbff5ac	22		22
+size		0xffbff608	22		22
+sum		0xffbff5a8	21		3442344
+
+selectsort:	0x109b8		-		-
+
+higher		0xffbff528	-13412352	21
+hold		0xffbff534	-12618904	3456789
+lower		0xffbff52c	-12631812	22
+minimumpos	0xffbff520	1538		21
+size		0xffbff588	22		22
+
+median:		0x10a78		-		-
+
+a		0xffbff5a8	3442344		11
+b		0xffbff5a4	156470		12
+med		0xffbff5ac	22		17
+size		0xffbff608	22		22
+
+printdata:	0x10b60		-		-
+
+check		0xffbff5ac	17		6
+i		0xffbff5a8	11		22
+size		0xffbff608	22		22
+
+printresults:	0x10c2c		-		-
+
+average		0xffbff60c	156470		156470
+largest		0xffbff604	3456789		3456789
+medianval	0xffbff610	17		17
+smallest	0xffbff608	-12345		-12345

@@ -1,0 +1,194 @@
+1. Guessed expression: 
+	3 - (5 * 4) - 2 % (5 * 4) - 9 / (2 % 6) + (8 * 9) / 3 + 10 * (7 + 8)
+2. Guessed result: 151
+3. Program result: 151
+4. gdb commands used to complete work:
+	br main
+	br first
+	br last
+	run
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $o1
+	x/i $pc
+	nexti
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $l0
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $o1
+	x/i $pc
+	nexti
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $l1
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $o1
+	x/i $pc
+	nexti
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $l2
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $l3
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $o1
+	x/i $pc
+	nexti
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $i2
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $o1
+	x/i $pc
+	nexti
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $l1
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $o1
+	x/i $pc
+	nexti
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $l2
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $o1
+	x/i $pc
+	nexti
+	x/i $pc
+	nexti
+	print %o0
+	x/i $pc
+	nexti
+	print $l3
+	x/i $pc
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	print $l0
+	x/i $pc
+	nexti
+	print $l0
+	x/i $pc
+	nexti
+	print $l0
+	x/i $pc
+	nexti
+	print $l0
+	x/i $pc
+	nexti
+	print $l0
+	x/i $pc
+	print $g0
+	nexti
+	print $o0
+	x/i $pc
+	nexti
+	x/i $pc
+	nexti
+5. Table:
+
+instr	  instr
+ at	  address	%l0	%l1	%l2	%l3	%o0	%01	%i2
+-----------------------------------------------------------------------------------
+first	  0x106bc	??	??	??	??	4	??	??
+first+4	  0x106c0	??	??	??	??	4	5	??
+first+8	  0x106c4	??	??	??	??	4	5	??
+first+12  0x106c8	??	??	??	??	20	5	??
+first+16  0x106cc	20	??	??	??	20	5	??
+first+20  0x106d0	20	??	??	??	2	5	??
+first+24  0x106d4	20	??	??	??	2	6	??
+first+28  0x106d8	20	??	??	??	2	6	??
+first+32  0x106dc	20	??	??	??	2	6	??
+first+36  0x106e0	20	2	??	??	2	6	??
+first+40  0x106e4	20	2	??	??	8	6	??
+first+44  0x106e8	20	2	??	??	8	9	??
+first+48  0x106ec	20	2	??	??	8	9	??
+first+52  0x106f0	20	2	??	??	72	9	??
+first+56  0x106f4	20	2	72	??	72	9	??
+first+60  0x106f8	20	2	72	??	7	9	??
+first+64  0x106fc	20	2	72	15	7	9	??
+first+68  0x10700	20	2	72	15	2	9	??
+first+72  0x10704	20	2	72	15	2	20	??
+first+76  0x10708	20	2	72	15	2	20	??
+first+80  0x1070c	20	2	72	15	2	20	??
+first+84  0x10710	20	2	72	15	2	20	2
+first+88  0x10714	20	2	72	15	9	20	2
+first+92  0x10718	20	2	72	15	9	2	2
+first+96  0x1071c	20	2	72	15	9	2	2
+first+100 0x10720	20	2	72	15	4	2	2
+first+104 0x10724	20	4	72	15	4	2	2
+first+108 0x10728	20	4	72	15	72	2	2
+first+112 0x1072c	20	4	72	15	72	3	2
+first+116 0x10730	20	4	72	15	72	3	2
+first+120 0x10734	20	4	72	15	24	3	2
+first+124 0x10738	20	4	24	15	24	3	2
+first+128 0x1073c	20	4	24	15	10	3	2
+first+132 0x10740	20	4	24	15	10	15	2
+first+136 0x10744	20	4	24	15	10	15	2
+first+140 0x10748	20	4	24	15	150	15	2
+first+144 0x1074c	20	4	24	150	150	15	2
+first+148 0x10750	20	4	24	150	3	15	2
+first+152 0x10754	-17	4	24	150	3	15	2
+first+156 0x10758	-19	4	24	150	3	15	2
+first+160 0x1075c	-23	4	24	150	3	15	2
+first+164 0x10760	1	4	24	150	3	15	2
+last	  0x10764	*151	4	24	150	3	15	2
+last+4	  0x10768	*151	4	24	150	0	15	2
+last+8	  0x10768	*151	4	24	150	0	15	2
+last+12	  0x1076c	*151	4	24	150	0	15	2
+
+6. Arithmatic answer marked in the table with * and is circled
+7. My guessed value matched the computers value so I must have evaluated the expression
+	accurately.
