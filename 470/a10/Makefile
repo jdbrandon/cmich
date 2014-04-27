@@ -10,7 +10,7 @@ $(TARG): $(OBJS)
 	$(LD) $(LDFLAGS) $(OBJS) -o $(TARG)
 
 clean:
-	rm -f *.o  a.out $(TARG)
+	rm -f *.o *.log $(TARG)
 
 print:
 	pr -l60 Makefile $(ASMSRCS) | lpr
